@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CTF Burger</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>CTF Burger</h1>
+  </header>
+  <button id="startGame" class="start-button"> ▶ Метеор ◀</button>
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="#">▶ Менью (ctf 1.0)</a>
+        <ul class="nav-subitem">
+          <li><a href="pages/why_we_must_solve_ctfs.html">Зачем решать цтф?</a></li>
+          <li><a href="pages/where_find_ctfs.html">Где искать ctf?</a></li>
+          <li><a href="pages/ctf_teams.html">Ctf команды(можно подписаться на каждую и следить за материалами,
+              мероприятиями,
+              райтапами)</a></li>
+          <li><a href="pages/cool_ctfers_and_not_only.html">Крутые ctfеры и не только</a></li>
+          <li><a href="pages/write-ups.html">Врайтапы, записи занятий</a></li>
+          <li><a href="pages/tasks(articles, video).html">Таски(+ статьи, видео)</a></li>
+          <li><a href="pages/Events.html">Мероприятия, новые соревнования ctf</a></li>
+          <li><a href="pages/cool_channels.html">Крутые каналы</a></li>
+          <li><a href="pages/tasks(articles, video).html">Таски(+ статьи, видео)</a></li>
+          <li><a href="pages/cool_ctfs_other_tournaments.html">Крутые ctf и не только соревнования</a></li>
+          <li><a href="pages/professions_in_cybersec.html">Профессии, направления в ИБ, в чем состоит работа</a>
+          </li>
+          <li><a href="pages/company_in_cybersec.html">Компании в ИБ</a></li>
+          <li><a href="pages/compliaence.html">Бумажная безопасность</a></li>
+          <li><a href="pages/Burger_komanda_history.html">Burger Команда (history)</a></li>
+          <li><a href="pages/useful_materials_for_internship.html">Полезные материалы для стажировки и прочее</a>
+          </li>
+          <li><a href="pages/how_to_ctf.html">Как расти в навыках, в ctf</a></li>
+          <li><a href="pages/our_plans.html">Планы</a></li>
+          <li><a href="pages/how_to_start_in_reverse.html">Как стартануть в реверсе и не только в нем</a></li>
+          <li><a href="pages/courses.html">Полезные курсы</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="#">▶ Менью (ctf 2.0)</a>
+        <ul class="nav-subitem">
+          <li><a href="pages/main_2_0.html">Главное</a> </li>
+          <li><a href="pages/masters_degree.html">Магистратура</a> </li>
+          <li><a href="pages/diplom.html">Диплом</a> </li>
+          <li><a href="pages/materials.html">Материалы</a> </li>
+          <li><a href="pages/python.html">python</a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Категории -->
+
+  </nav>
+  <nav>
+    <ul>
+      <li class="nav-item">
+        <a href="#">▶ Менью (no_ctf 3.0)</a>
+        <ul class="nav-subitem">
+          <li><a href="pages/3.0/main_3_0.html">Главное</a> </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Категории -->
+
+  </nav>
+
+
+  <main>
+    <h2>Привет, мир!!2</h2>
+    <p>Кароче я подумал, а почему мы нам не запилить свой сайт.</p>
+    <p>Потом его можно будет передать следующему покалению мэишников.</p>
+    <p>Здесь я расписал важную по моему мнению инфу.</p>
+    <p>Думаю каждый будет потихоньку добавлять какой-нибудь матерал и это будет полезно для нас.</p>
+    <p>Ещё из идей добавить какой-нибудь дашбоард или канбан доску для решения ctf, но кажется на сайте это не оч
+      удобно.</p>
+    <p>Поскольку все могут в разное время(там можно писать кто работал над таском и что у него вышло, чтобы кто-то
+      другой дорешал)</p>
+    <p>Вообще в планах, пробовать расширять сайт между другими группами и даже курсами, но это уже как пойдёт</p>
+    <p>Ну ебаный сыр, почему все идет елочкой и по центру, Ахмад пофикси пж, хотя сам зафиксил.</p>
+  </main>
+
+
+  <div id="game" style="display: none;">
+    <div id="globe"></div>
+    <div id="timer">0</div>
+    <div id="gameover">Игра окончена</div>
+
+    <script src="https://threejs.org/build/three.js"></script>
+
+  </div>
+  <script>
+    var navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(function (navItem) {
+      navItem.addEventListener('click', function () {
+        this.classList.toggle('active');
+      });
+    });
+
+
+  </script>
+  <script src="meteor.js"></script>
+</body>
+
+</html>
